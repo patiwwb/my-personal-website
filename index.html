@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Patryk Chlanda</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Software Engineer @Apple" />
+    <meta name="keywords" content="Chirag Shah, portfolio" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="theme-color" content="black" />
+	<!--
+    <link
+      rel="shortcut icon"
+      href="https://icons-for-free.com/iconfiles/png/512/webpage+website+icon-1320087271286406322.png"
+      type="image/png"
+    />
+	-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	 <link
+      rel="shortcut icon"
+      href="./assets/images/letter-p-removebg-preview.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    
+    <noscript>
+      <link rel="stylesheet" href="assets/css/noscript.css"
+    /></noscript>
+  </head>
+
+  <body class="is-preload" onload="typeWriter()">
+
+    <a href="javascript:" id="return-to-top"><i></i></a>
+
+
+    <!-- Wrapper -->
+    <div id="wrapper" class="divided">
+      <!-- Introduction -->
+      <div class="navwrapper">
+
+    
+      <nav class="nav main-nav">
+        <ul>
+            <li><a href='/'>ABOUT ME</a></li>
+            <li><a onclick="smoothScroll(document.getElementById('first'))">SKILLS</a></li>
+            <li><a onclick="smoothScroll(document.getElementById('second'))">PROJECTS</a></li>
+            <li><a onclick="smoothScroll(document.getElementById('contact'))">CONTACT</a></li>
+        </ul>
+        <label class="switch-btn" id="dark-change"></label>
+    </nav>
+
+  </div>
+      <section
+        class="banner style3 invert orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
+      >
+
+        <div class="content">
+          <div
+            id="first-line"
+            title="Switch theme."
+            onclick="resetCursor(), switchTheme()"
+          >
+            <h2 id="typing"></h2>
+          </div>
+          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
+            <p class="major">
+              <!-- <code style="margin-left: 0%;">-->
+              <!--Software Engineer @EMSE @UiO --> @EMSE @UiO <br />
+              Passionate software engineer and avid learner.<br> <br>I always like to learn new things from
+              others as much as helping others solve their problems.
+              <br /><br />
+			  <!--
+              Solving problems at scale, maintaining high standards in writing
+              production code drives me to learn and improve constantly.
+              <br />-->
+              <li style="padding-top: 0%; list-style-type: none">
+                Data Structures | Algorithms | System Design
+              </li>
+              <li style="padding-top: 0%; list-style-type: none">
+                Design Patterns | Microservices | DevOps & Cloud
+              </li>
+            </p>
+          </div>
+          <div class="inner">
+            <ul class="icons">
+              <li>
+                <a
+                  href="mailto:patrykchlandapro@gmail.com"
+                  class="icon style1 fa-envelope"
+                  ><span class="label">Email</span></a
+                >
+                <a href="mailto:patrykchlandapro@gmail.com">Email</a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/patryk-chlanda/"
+                  target="_blank"
+                  class="icon brands style1 fa-linkedin-in"
+                  ><span class="label">LinkedIn</span></a
+                >
+                <a
+                  href="https://www.linkedin.com/in/patryk-chlanda/"
+                  target="_blank"
+                  >LinkedIn</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  class="icon brands style1 fa-github"
+                  ><span class="label">GitHub</span></a
+                >
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  >GitHub</a
+                >
+              </li>
+              
+            </ul>
+          </div>
+        </div>
+        <div
+          class="image circle circle-border"
+          id="profile-image"
+          title="Switch theme."
+          onclick="resetCursor(), switchTheme()"
+        >
+          <img src="./assets/images/me-2022.png" alt="Patryk's avatar" />
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section
+        class="spotlight invert style5 orient-center content-align-center image-position-left onscroll-image-fade-in onscroll-content-fade-right"
+        id="first"
+      >
+        <div class="content">
+          <div title="Switch theme."> 
+<!--             onclick="resetCursor(), switchTheme()"> -->
+            <h2>Skills</h2>
+          </div>
+          <div>
+            <h4>Programming languages, Web technologies & frameworks</h4>
+            <a href="https://www.python.org/" target="_blank">
+              <img
+                src="./assets/images/tools/python3.svg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Python"
+              />
+            </a>
+
+            <a href="https://isocpp.org/" target="_blank">
+              <img
+                src="./assets/images/tools/c++.svg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="C++"
+              />
+            </a>
+
+            <a
+              href="https://www.typescriptlang.org/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/tools/typescript.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="JS"
+              />
+            </a>
+
+            <a href="https://nodejs.org/en/" target="_blank">
+              <img
+                src="./assets/images/tools/node.svg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="NodeJS"
+              />
+            </a>
+
+            <a
+              href="https://flask.palletsprojects.com/en/1.1.x/"
+              target="_blank"
+            >
+              <img
+                src="./assets/images/tools/flask.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Flask"
+              />
+            </a>
+
+            <!--
+            <a href="https://www.nginx.com/" target="_blank">
+              <img
+                src="./assets/images/tools/nginx.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Nginx"
+              />
+            </a>
+          -->           
+           <a href="https://angular.io/" target="_blank">
+            <img
+            src="./assets/images/tools/angular.png"
+            width="50"
+            height="50"
+            style="border: 2px solid #555; border-radius: 50%"
+            alt="Nginx"
+          />
+        </a>
+
+        <a href="https://www.djangoproject.com/" target="_blank">
+          <img
+          src="./assets/images/tools/django.png"
+          width="50"
+          height="50"
+          style="border: 2px solid #555; border-radius: 50%"
+          alt="Nginx"
+        />
+      </a>
+
+            <a href="https://opencv.org/" target="_blank">
+              <img
+                src="./assets/images/tools/opencv.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="OpenCV"
+              />
+            </a>
+
+            <a href="https://tensorflow.org" target="_blank">
+              <img
+                src="./assets/images/tools/tf.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Tensorflow"
+              />
+            </a>
+
+            <br /><br />
+            <h4>Deployment, Cloud and Version Control</h4>
+
+            <a href="https://www.docker.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/docker.svg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Docker"
+            /></a>
+
+            <a href="https://cloud.google.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/gcp.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Google Cloud Platform"
+            /></a>
+
+
+
+            <a href="https://firebase.google.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/firebase.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Firebase"
+            /></a>
+
+            <a href="https://aws.amazon.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/aws.jpg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="AWS"
+            /></a>
+
+            <a href="https://git-scm.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/git.svg"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Git"
+            /></a>
+
+            <br /><br />
+            <h4>Databases & Big data</h4>
+            <a href="https://www.mysql.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/mysql.svg"
+                height="50"
+                width="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="MySQL"
+            /></a>
+
+            <a href="https://httpd.apache.org/" target="_blank">
+              <img
+                src="./assets/images/tools/apache.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Apache"
+                height="50"
+              />
+            </a>
+
+            <a href="https://www.mongodb.com/" target="_blank"
+              ><img
+                src="./assets/images/tools/mongodb.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="MongoDB"
+            /></a>
+
+            <a href="https://www.sqlite.org/" target="_blank"
+              ><img
+                src="./assets/images/tools/sqlite.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="MySQL"
+            /></a>
+
+            <a href="https://firebase.google.com/docs/firestore" target="_blank">
+              <img
+                src="./assets/images/tools/firestore.png"
+                width="50"
+                height="50"
+                style="border: 2px solid #555; border-radius: 50%"
+                alt="Apache"
+                height="50"
+              />
+            </a>
+
+            <br />
+            <br />
+            <h4>Problem Solving</h4>
+            <b><a
+              href="https://leetcode.com"
+              target="_blank"
+              >LeetCode</a></b>
+            ||
+            <b><a
+              href="https://geeksforgeeks.org/"
+              target="_blank"
+              >GeeksforGeeks</a>
+            </b>
+            ||
+            <b><a
+              href="https://www.hackerrank.com/"
+              target="_blank"
+              >HackerRank</a>
+            </b>
+          </div>
+          <br />
+          <ul class="actions stacked">
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1_T0DkYA4PFxp-Bb0icVJULGb5UXnlZvI/view?usp=sharing"
+                class="button"
+                target="_blank"
+                >View Resume</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="image">
+          <img src="assets/images/setup5.jpg" />
+        </div>
+      </section>
+
+
+      <!-- Projects -->
+      <section class="wrapper style1 invert align-center" id="second">
+        <div class="inner">
+          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
+            <h2>Projects</h2>
+          </div>
+
+          <div class="items style3 medium onscroll-fade-in">
+        
+           
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/avidLearnerInProgress/cpp-projects/tree/master/osm-route-planner"
+                  target="_blank"
+                  >Route planner - Shortest distance simulation</a
+                >
+              </h3>
+              <p>
+                Determine shortest path between two points on the map using A*
+                search algorithm.
+              </p>
+            </section>
+            <br />
+
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  >Pathfinding Visualizer</a
+                >
+              </h3>
+              <p>
+                Visualization of some pathfinding algorithms: Dijkstra’s Algorithm (weighted),
+                A* Search (weighted) and Bread-First Search (unweighted).
+              </p>
+            </section>
+
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  >Advanced House Price Prediction <br
+                /></a>
+              </h3>
+              <p>Exploratory data analysis on real estate data collected from the web with Scraping and automation utilities written in Python.</p>
+            </section>
+
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                >
+                  OpenWorld Game<br
+                /></a>
+              </h3>
+              <p>
+                Win32 adventure game programmed only in C.
+                Open World game with simplified mechanics and short main story.
+              </p>
+            </section>
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  >NFT WebApp</a
+                >
+              </h3>
+              <p>
+                Web3 frontend WebApp. Deployment on the Ethereum Goerli Network.
+                Minting of custom NFT (ERC 721 token) generated with a JSX script.
+              </p>
+            </section>
+            <section>
+              <h3>
+                <a
+                  href="https://github.com/patiwwb"
+                  target="_blank"
+                  >Full Stack WebApp</a
+                >
+              </h3>
+              <p>
+                Complete Online Shop WebApp with deployment on Firebase, Double Authentification, Admin panel and more !
+              </p>
+            </section>
+            <section>
+              <a
+                href="https://github.com/patiwwb"
+                target="_blank"
+                class="button big wide smooth-scroll-middle"
+                >View More on GitHub</a
+              >
+            </section>
+          </div>
+        </div>
+      </section>
+
+     
+      <section class="wrapper style1 invert align-center" id="contact">
+        <div class="inner medium">
+          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
+            <h2>Contact</h2>
+          </div>
+          <p>Please feel free to drop me a message below!</p>
+          <form method="post" action="https://formspree.io/f/mjvlwyzw">
+            <div class="fields">
+              <div class="field half">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" value="" />
+              </div>
+              <div class="field half">
+                <label for="email">Email</label>
+                <input type="email" name="_replyto" id="email" value="" />
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5"></textarea>
+              </div>
+            </div>
+            <ul class="actions special">
+              <li>
+                <input type="submit" value="Send Message" />
+              </li>
+            </ul>
+          </form>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="wrapper style1 invert align-center">
+        <div class="inner">
+          <ul class="icons">
+            <li>
+              <a
+                href="mailto:patrykchlandapro@gmail.com"
+                class="icon style2 fa-envelope"
+                ><span class="label">Email</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/patryk-chlanda/"
+                target="_blank"
+                class="icon brands style2 fa-linkedin-in"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://github.com/patiwwb"
+                target="_blank"
+                class="icon brands style2 fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+          </ul>
+          <p>
+            &copy; 2022 Patryk CHLANDA
+    
+          </p>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
