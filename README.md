@@ -11,7 +11,7 @@ Welcome to my personal website! I'm a software engineer with a passion for solvi
 
 ## View the Site
 
-You can view the site live here: [Your Website URL]([https://yourwebsite.com](https://patrykchlanda.netlify.app/))
+You can view the site live here: [link](https://patrykchlanda.netlify.app/)
 
 If you want to recreate a similar website you can clone the repository, make changes and run it locally:
 
