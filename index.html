@@ -1,571 +1,587 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" data-theme="dark">
   <head>
-    <title>Patryk Chlanda</title>
     <meta charset="utf-8" />
-    <meta name="description" content="Software Engineer @Apple" />
-    <meta name="keywords" content="Chirag Shah, portfolio" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Patryk Chlanda — Data &amp; Software Engineer</title>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="description"
+      content="Patryk Chlanda — data &amp; software engineer. I build data platforms and AI systems: lakehouses, pipelines and LLM tools that turn raw data into decisions people trust."
     />
-    <meta name="theme-color" content="black" />
-	<!--
+    <meta property="og:title" content="Patryk Chlanda — Data &amp; Software Engineer" />
+    <meta
+      property="og:description"
+      content="Data platforms, pipelines and AI systems. Currently at Unit8; previously Artefact and Datadog."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0e0d0b" />
     <link
-      rel="shortcut icon"
-      href="https://icons-for-free.com/iconfiles/png/512/webpage+website+icon-1320087271286406322.png"
-      type="image/png"
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23eda03f'/%3E%3Ctext x='32' y='45' text-anchor='middle' font-family='Georgia,serif' font-weight='700' font-size='40' fill='%2314100a'%3EP%3C/text%3E%3C/svg%3E"
     />
-	-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
-	 <link
-      rel="shortcut icon"
-      href="./assets/images/letter-p-removebg-preview.png"
-      type="image/png"
+
+    <script>
+      (function () {
+        var d = document.documentElement;
+        d.classList.add("js");
+        var t = null;
+        try {
+          t = localStorage.getItem("theme");
+        } catch (e) {}
+        if (t !== "light" && t !== "dark") {
+          t =
+            window.matchMedia &&
+            window.matchMedia("(prefers-color-scheme: light)").matches
+              ? "light"
+              : "dark";
+        }
+        d.setAttribute("data-theme", t);
+      })();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..600;1,9..144,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
     />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    
-    <noscript>
-      <link rel="stylesheet" href="assets/css/noscript.css"
-    /></noscript>
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
-  <body class="is-preload" onload="typeWriter()">
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
 
-    <a href="javascript:" id="return-to-top"><i></i></a>
-
-
-    <!-- Wrapper -->
-    <div id="wrapper" class="divided">
-      <!-- Introduction -->
-      <div class="navwrapper">
-
-    
-      <nav class="nav main-nav">
-        <ul>
-            <li><a href='/'>ABOUT ME</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('first'))">SKILLS</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('second'))">PROJECTS</a></li>
-            <li><a onclick="smoothScroll(document.getElementById('contact'))">CONTACT</a></li>
-        </ul>
-        <label class="switch-btn" id="dark-change"></label>
-    </nav>
-
-  </div>
-      <section
-        class="banner style3 invert orient-right content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right"
-      >
-
-        <div class="content">
-          <div
-            id="first-line"
-            title="Switch theme."
-            onclick="resetCursor(), switchTheme()"
+    <header class="nav" id="nav">
+      <div class="container nav-inner">
+        <a href="#top" class="brand"
+          ><span class="sigil">~/</span><span class="brand-long">patryk-chlanda</span
+          ><span class="brand-short" aria-hidden="true"></span
+        ></a>
+        <nav class="nav-links" aria-label="Sections">
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a
+            class="nav-resume"
+            href="https://drive.google.com/file/d/1-HUT3zpYaQB3douJprTAmceVvIRVlR0G/view?usp=sharing"
+            target="_blank"
+            rel="noopener"
+            >resume ↗</a
           >
-            <h2 id="typing"></h2>
-          </div>
-          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
-            <p class="major">
-              <!-- <code style="margin-left: 0%;">-->
-              <!--Software Engineer @EMSE @UiO --> @EMSE @UiO <br />
-              Passionate software engineer and avid learner.<br> <br>I always like to learn new things from
-              others as much as helping others solve their problems.
-              <br /><br />
-			  <!--
-              Solving problems at scale, maintaining high standards in writing
-              production code drives me to learn and improve constantly.
-              <br />-->
-              <li style="padding-top: 0%; list-style-type: none">
-                Data Structures | Algorithms | System Design
-              </li>
-              <li style="padding-top: 0%; list-style-type: none">
-                Design Patterns | Microservices | DevOps & Cloud
-              </li>
-            </p>
-          </div>
-          <div class="inner">
-            <ul class="icons">
-              <li>
-                <a
-                  href="mailto:patrykchlandapro@gmail.com"
-                  class="icon style1 fa-envelope"
-                  ><span class="label">Email</span></a
-                >
-                <a href="mailto:patrykchlandapro@gmail.com">Email</a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/patryk-chlanda/"
-                  target="_blank"
-                  class="icon brands style1 fa-linkedin-in"
-                  ><span class="label">LinkedIn</span></a
-                >
-                <a
-                  href="https://www.linkedin.com/in/patryk-chlanda/"
-                  target="_blank"
-                  >LinkedIn</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  class="icon brands style1 fa-github"
-                  ><span class="label">GitHub</span></a
-                >
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  >GitHub</a
-                >
-              </li>
-              
-            </ul>
-          </div>
+          <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch theme">
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+            </svg>
+          </button>
         </div>
-        <div
-          class="image circle circle-border"
-          id="profile-image"
-          title="Switch theme."
-          onclick="resetCursor(), switchTheme()"
-        >
-          <img src="./assets/images/me-2022.png" alt="Patryk's avatar" />
+      </div>
+    </header>
+
+    <main id="main">
+      <!-- ================= Hero ================= -->
+      <section class="hero" id="top">
+        <div class="container">
+          <p class="status reveal">
+            <span class="dot" aria-hidden="true"></span>
+            Data &amp; Software Engineer @
+            <a href="https://unit8.com" target="_blank" rel="noopener">Unit8</a>
+          </p>
+          <h1 class="reveal" style="--d: 0.06s">Patryk Chlanda</h1>
+          <p class="lede reveal" style="--d: 0.12s">
+            I build data platforms and AI systems that turn raw data into
+            <em>decisions people trust</em>.
+          </p>
+          <p class="sub reveal" style="--d: 0.18s">
+            Previously at Artefact and Datadog. Trained at École des Mines de
+            Saint-Étienne, with graduate coursework in AI at the University of
+            Oslo. Polish&#8209;French.
+          </p>
+          <div class="hero-links reveal" style="--d: 0.24s">
+            <a
+              class="btn"
+              href="https://drive.google.com/file/d/1-HUT3zpYaQB3douJprTAmceVvIRVlR0G/view?usp=sharing"
+              target="_blank"
+              rel="noopener"
+              >View resume <span class="arr" aria-hidden="true">↗</span></a
+            >
+            <a class="link-plain" href="https://github.com/patiwwb" target="_blank" rel="noopener"
+              >GitHub <span class="arr" aria-hidden="true">↗</span></a
+            >
+            <a
+              class="link-plain"
+              href="https://www.linkedin.com/in/patryk-chlanda/"
+              target="_blank"
+              rel="noopener"
+              >LinkedIn <span class="arr" aria-hidden="true">↗</span></a
+            >
+            <a class="link-plain" href="mailto:patrykchlandapro@gmail.com">Email</a>
+          </div>
         </div>
       </section>
 
-      <!-- Skills -->
-      <section
-        class="spotlight invert style5 orient-center content-align-center image-position-left onscroll-image-fade-in onscroll-content-fade-right"
-        id="first"
-      >
-        <div class="content">
-          <div title="Switch theme."> 
-<!--             onclick="resetCursor(), switchTheme()"> -->
-            <h2>Skills</h2>
-          </div>
-          <div>
-            <h4>Programming languages, Web technologies & frameworks</h4>
-            <a href="https://www.python.org/" target="_blank">
-              <img
-                src="./assets/images/tools/python3.svg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Python"
-              />
-            </a>
+      <!-- ================= Experience ================= -->
+      <section class="section" id="experience">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>01</b> — Where I've worked</span>
+            <div class="sec-title"><h2>Experience</h2></div>
+          </header>
 
-            <a href="https://isocpp.org/" target="_blank">
-              <img
-                src="./assets/images/tools/c++.svg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="C++"
-              />
-            </a>
-
-            <a
-              href="https://www.typescriptlang.org/"
-              target="_blank"
-            >
-              <img
-                src="./assets/images/tools/typescript.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="JS"
-              />
-            </a>
-
-            <a href="https://nodejs.org/en/" target="_blank">
-              <img
-                src="./assets/images/tools/node.svg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="NodeJS"
-              />
-            </a>
-
-            <a
-              href="https://flask.palletsprojects.com/en/1.1.x/"
-              target="_blank"
-            >
-              <img
-                src="./assets/images/tools/flask.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Flask"
-              />
-            </a>
-
-            <!--
-            <a href="https://www.nginx.com/" target="_blank">
-              <img
-                src="./assets/images/tools/nginx.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Nginx"
-              />
-            </a>
-          -->           
-           <a href="https://angular.io/" target="_blank">
-            <img
-            src="./assets/images/tools/angular.png"
-            width="50"
-            height="50"
-            style="border: 2px solid #555; border-radius: 50%"
-            alt="Nginx"
-          />
-        </a>
-
-        <a href="https://www.djangoproject.com/" target="_blank">
-          <img
-          src="./assets/images/tools/django.png"
-          width="50"
-          height="50"
-          style="border: 2px solid #555; border-radius: 50%"
-          alt="Nginx"
-        />
-      </a>
-
-            <a href="https://opencv.org/" target="_blank">
-              <img
-                src="./assets/images/tools/opencv.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="OpenCV"
-              />
-            </a>
-
-            <a href="https://tensorflow.org" target="_blank">
-              <img
-                src="./assets/images/tools/tf.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Tensorflow"
-              />
-            </a>
-
-            <br /><br />
-            <h4>Deployment, Cloud and Version Control</h4>
-
-            <a href="https://www.docker.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/docker.svg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Docker"
-            /></a>
-
-            <a href="https://cloud.google.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/gcp.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Google Cloud Platform"
-            /></a>
-
-
-
-            <a href="https://firebase.google.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/firebase.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Firebase"
-            /></a>
-
-            <a href="https://aws.amazon.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/aws.jpg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="AWS"
-            /></a>
-
-            <a href="https://git-scm.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/git.svg"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Git"
-            /></a>
-
-            <br /><br />
-            <h4>Databases & Big data</h4>
-            <a href="https://www.mysql.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/mysql.svg"
-                height="50"
-                width="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="MySQL"
-            /></a>
-
-            <a href="https://httpd.apache.org/" target="_blank">
-              <img
-                src="./assets/images/tools/apache.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Apache"
-                height="50"
-              />
-            </a>
-
-            <a href="https://www.mongodb.com/" target="_blank"
-              ><img
-                src="./assets/images/tools/mongodb.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="MongoDB"
-            /></a>
-
-            <a href="https://www.sqlite.org/" target="_blank"
-              ><img
-                src="./assets/images/tools/sqlite.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="MySQL"
-            /></a>
-
-            <a href="https://firebase.google.com/docs/firestore" target="_blank">
-              <img
-                src="./assets/images/tools/firestore.png"
-                width="50"
-                height="50"
-                style="border: 2px solid #555; border-radius: 50%"
-                alt="Apache"
-                height="50"
-              />
-            </a>
-
-            <br />
-            <br />
-            <h4>Problem Solving</h4>
-            <b><a
-              href="https://leetcode.com"
-              target="_blank"
-              >LeetCode</a></b>
-            ||
-            <b><a
-              href="https://geeksforgeeks.org/"
-              target="_blank"
-              >GeeksforGeeks</a>
-            </b>
-            ||
-            <b><a
-              href="https://www.hackerrank.com/"
-              target="_blank"
-              >HackerRank</a>
-            </b>
-          </div>
-          <br />
-          <ul class="actions stacked">
-            <li>
-              <a
-                href="https://drive.google.com/file/d/1_T0DkYA4PFxp-Bb0icVJULGb5UXnlZvI/view?usp=sharing"
-                class="button"
-                target="_blank"
-                >View Resume</a
-              >
+          <ol>
+            <li class="xp-item reveal">
+              <div class="xp-when">
+                <span class="xp-dates">Mar 2026 — now</span>
+                <span class="xp-loc">Kraków, PL</span>
+              </div>
+              <div class="xp-what">
+                <h3>
+                  Data &amp; Software Engineer ·
+                  <a href="https://unit8.com" target="_blank" rel="noopener">Unit8</a>
+                </h3>
+                <p class="xp-org">Swiss data &amp; AI consultancy</p>
+                <ul>
+                  <li>
+                    Designing and building a medallion lakehouse on Azure Databricks
+                    with Unity Catalog — multiple source systems unified, bronze to
+                    gold, into one governed analytical layer.
+                  </li>
+                  <li>
+                    Automated releases of dozens of pipelines across three
+                    environments (dev → qua → prod) with GitHub Actions and
+                    Databricks Asset Bundles, gated by tests and validation.
+                  </li>
+                  <li>
+                    Built dbt models and orchestration jobs for timeseries
+                    analytics, plus live Databricks dashboards and Databricks Apps
+                    monitoring metrics and data quality for dozens of users.
+                  </li>
+                  <li>
+                    Shipped a RAG knowledge assistant — specialised agents reaching
+                    internal data sources over MCP — used by dozens of people today
+                    and designed to scale to the whole company.
+                  </li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Databricks</span>
+                  <span class="chip">dbt</span>
+                  <span class="chip">Terraform</span>
+                  <span class="chip">GitHub Actions</span>
+                  <span class="chip">Azure OpenAI</span>
+                  <span class="chip">MCP</span>
+                </div>
+              </div>
             </li>
-          </ul>
-        </div>
-        <div class="image">
-          <img src="assets/images/setup5.jpg" />
+
+            <li class="xp-item reveal">
+              <div class="xp-when">
+                <span class="xp-dates">Sep 2023 — Mar 2026</span>
+                <span class="xp-loc">Paris, FR</span>
+              </div>
+              <div class="xp-what">
+                <h3>
+                  Data Engineer ·
+                  <a href="https://www.artefact.com" target="_blank" rel="noopener">Artefact</a>
+                </h3>
+                <p class="xp-org">Global data &amp; AI consultancy</p>
+                <ul>
+                  <li>
+                    Designed and ran a subscription data product serving 40+
+                    enterprise clients and 500+ active users, on Azure
+                    infrastructure provisioned with Terraform.
+                  </li>
+                  <li>
+                    Built ETL/ELT pipelines with Airflow and dbt processing millions
+                    of records a day, plus Kafka streaming for events that needed
+                    live processing.
+                  </li>
+                  <li>
+                    Automated ingestion from 50+ APIs and databases (+70% collection
+                    efficiency) and a data-quality framework that cut incidents by
+                    90%.
+                  </li>
+                  <li>
+                    Integrated OpenAI-powered NLP features, with Langfuse for LLM
+                    observability and evals.
+                  </li>
+                  <li>
+                    Raised the engineering bar through PR reviews, git hooks and
+                    CI-enforced testing — optimising for cost, scalability and
+                    security.
+                  </li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Airflow</span>
+                  <span class="chip">dbt</span>
+                  <span class="chip">Kafka</span>
+                  <span class="chip">Azure</span>
+                  <span class="chip">BigQuery</span>
+                  <span class="chip">LangChain</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="xp-item reveal">
+              <div class="xp-when">
+                <span class="xp-dates">Apr — Sep 2023</span>
+                <span class="xp-loc">Paris, FR</span>
+              </div>
+              <div class="xp-what">
+                <h3>
+                  Data Engineer Intern ·
+                  <a href="https://www.datadoghq.com" target="_blank" rel="noopener">Datadog</a>
+                </h3>
+                <p class="xp-org">Cloud observability platform</p>
+                <ul>
+                  <li>
+                    Built and optimised distributed, high-volume ETL pipelines with
+                    Spark (Scala) and Python (Luigi) on the Internal Analytics Core
+                    Data team.
+                  </li>
+                  <li>
+                    Modelled and stored large datasets across AWS, GCP and Azure,
+                    with Snowflake and Kubernetes.
+                  </li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Spark</span>
+                  <span class="chip">Scala</span>
+                  <span class="chip">Luigi</span>
+                  <span class="chip">Snowflake</span>
+                  <span class="chip">Kubernetes</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="xp-item reveal">
+              <div class="xp-when">
+                <span class="xp-dates">2018 — 2023</span>
+                <span class="xp-loc">Paris, FR</span>
+              </div>
+              <div class="xp-what">
+                <h3>Full-stack Engineer · Freelance</h3>
+                <ul>
+                  <li>
+                    Built websites and web apps end-to-end for clients — Angular and
+                    Django fronts, Node and Python backends, custom APIs with
+                    Express and FastAPI.
+                  </li>
+                  <li>
+                    Ran serverless infrastructure on AWS and GCP and owned delivery
+                    directly with clients.
+                  </li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">Angular</span>
+                  <span class="chip">Django</span>
+                  <span class="chip">Node.js</span>
+                  <span class="chip">FastAPI</span>
+                  <span class="chip">AWS</span>
+                </div>
+              </div>
+            </li>
+
+            <li class="xp-item reveal">
+              <div class="xp-when">
+                <span class="xp-dates">Sep 2021 — Jul 2022</span>
+                <span class="xp-loc">Aix-en-Provence, FR</span>
+              </div>
+              <div class="xp-what">
+                <h3>Data Science &amp; Software Intern · Agrove</h3>
+                <p class="xp-org">Urban-farming startup</p>
+                <ul>
+                  <li>
+                    Trained and benchmarked AI models for urban-farming yield
+                    optimisation — 92% top-1 accuracy, deployed in the mobile app.
+                  </li>
+                  <li>
+                    Built the FastAPI backend and React front of a plant-health
+                    scoring system, logging to PostgreSQL.
+                  </li>
+                </ul>
+                <div class="chips">
+                  <span class="chip">TensorFlow</span>
+                  <span class="chip">FastAPI</span>
+                  <span class="chip">React</span>
+                  <span class="chip">PostgreSQL</span>
+                </div>
+              </div>
+            </li>
+          </ol>
         </div>
       </section>
 
+      <!-- ================= Skills ================= -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>02</b> — What I work with</span>
+            <div class="sec-title"><h2>Skills</h2></div>
+          </header>
 
-      <!-- Projects -->
-      <section class="wrapper style1 invert align-center" id="second">
-        <div class="inner">
-          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
-            <h2>Projects</h2>
+          <div class="skill-row reveal">
+            <div class="skill-label">Data platforms</div>
+            <div class="tags">
+              <span class="tag">Databricks</span>
+              <span class="tag">Delta Lake</span>
+              <span class="tag">Unity Catalog</span>
+              <span class="tag">dbt</span>
+              <span class="tag">Airflow</span>
+              <span class="tag">Spark</span>
+              <span class="tag">Kafka</span>
+              <span class="tag">Snowflake</span>
+              <span class="tag">BigQuery</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
           </div>
 
-          <div class="items style3 medium onscroll-fade-in">
-        
-           
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/avidLearnerInProgress/cpp-projects/tree/master/osm-route-planner"
-                  target="_blank"
-                  >Route planner - Shortest distance simulation</a
-                >
-              </h3>
-              <p>
-                Determine shortest path between two points on the map using A*
-                search algorithm.
-              </p>
-            </section>
-            <br />
+          <div class="skill-row reveal">
+            <div class="skill-label">Cloud &amp; DevOps</div>
+            <div class="tags">
+              <span class="tag">Azure</span>
+              <span class="tag">GCP</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">GitHub Actions</span>
+            </div>
+          </div>
 
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  >Pathfinding Visualizer</a
-                >
-              </h3>
-              <p>
-                Visualization of some pathfinding algorithms: Dijkstra’s Algorithm (weighted),
-                A* Search (weighted) and Bread-First Search (unweighted).
-              </p>
-            </section>
+          <div class="skill-row reveal">
+            <div class="skill-label">AI &amp; LLMs</div>
+            <div class="tags">
+              <span class="tag">RAG &amp; multi-agent systems</span>
+              <span class="tag">MCP</span>
+              <span class="tag">OpenAI API</span>
+              <span class="tag">Claude &amp; Anthropic API</span>
+              <span class="tag">LangChain</span>
+              <span class="tag">Langfuse &amp; LLM evals</span>
+              <span class="tag">Vector search &amp; embeddings</span>
+              <span class="tag">TensorFlow</span>
+            </div>
+          </div>
 
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  >Advanced House Price Prediction <br
-                /></a>
-              </h3>
-              <p>Exploratory data analysis on real estate data collected from the web with Scraping and automation utilities written in Python.</p>
-            </section>
-
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                >
-                  OpenWorld Game<br
-                /></a>
-              </h3>
-              <p>
-                Win32 adventure game programmed only in C.
-                Open World game with simplified mechanics and short main story.
-              </p>
-            </section>
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  >NFT WebApp</a
-                >
-              </h3>
-              <p>
-                Web3 frontend WebApp. Deployment on the Ethereum Goerli Network.
-                Minting of custom NFT (ERC 721 token) generated with a JSX script.
-              </p>
-            </section>
-            <section>
-              <h3>
-                <a
-                  href="https://github.com/patiwwb"
-                  target="_blank"
-                  >Full Stack WebApp</a
-                >
-              </h3>
-              <p>
-                Complete Online Shop WebApp with deployment on Firebase, Double Authentification, Admin panel and more !
-              </p>
-            </section>
-            <section>
-              <a
-                href="https://github.com/patiwwb"
-                target="_blank"
-                class="button big wide smooth-scroll-middle"
-                >View More on GitHub</a
-              >
-            </section>
+          <div class="skill-row reveal">
+            <div class="skill-label">Languages &amp; web</div>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Scala</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">Swift</span>
+              <span class="tag">Bash</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Django</span>
+              <span class="tag">React</span>
+              <span class="tag">Angular</span>
+            </div>
           </div>
         </div>
       </section>
 
-     
-      <section class="wrapper style1 invert align-center" id="contact">
-        <div class="inner medium">
-          <div title="Switch theme." onclick="resetCursor(), switchTheme()">
-            <h2>Contact</h2>
+      <!-- ================= Projects ================= -->
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>03</b> — Things I've built</span>
+            <div class="sec-title"><h2>Projects</h2></div>
+          </header>
+
+          <div class="cards">
+            <a class="card reveal" href="https://github.com/patiwwb/App-Audio-Controller" target="_blank" rel="noopener">
+              <h3>AppAudioController</h3>
+              <p>
+                A macOS menu-bar app for per-app volume, 10-band EQ and audio
+                routing — built entirely on public CoreAudio process-tap APIs. No
+                kernel extensions, no private SPI.
+              </p>
+              <div class="card-foot">
+                <span>Swift · macOS 14+</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <a class="card reveal" style="--d: 0.08s" href="https://github.com/patiwwb/AES-128" target="_blank" rel="noopener">
+              <h3>AES-128 in VHDL</h3>
+              <p>
+                The AES-128 decryption pipeline implemented in pure VHDL — the
+                block cipher written for hardware, not just calling a library.
+              </p>
+              <div class="card-foot">
+                <span>VHDL · cryptography</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
+
+            <a class="card reveal" style="--d: 0.16s" href="https://github.com/patiwwb/STM-32-RFID-Door-Locking-Project" target="_blank" rel="noopener">
+              <h3>RFID Door Lock</h3>
+              <p>
+                An RFID-badge door-locking system on an STM32 microcontroller —
+                bare-metal C with the HAL, hardware in the loop.
+              </p>
+              <div class="card-foot">
+                <span>C · STM32</span>
+                <span class="arrow" aria-hidden="true">↗</span>
+              </div>
+            </a>
           </div>
-          <p>Please feel free to drop me a message below!</p>
-          <form method="post" action="https://formspree.io/f/mjvlwyzw">
-            <div class="fields">
-              <div class="field half">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" value="" />
+
+          <a class="more-link" href="https://github.com/patiwwb?tab=repositories" target="_blank" rel="noopener"
+            >all repos on github.com/patiwwb →</a
+          >
+        </div>
+      </section>
+
+      <!-- ================= Education & credentials ================= -->
+      <section class="section" id="education">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>04</b> — Where I learned it</span>
+            <div class="sec-title"><h2>Education &amp; credentials</h2></div>
+          </header>
+
+          <div class="cred-grid">
+            <div class="cred-col reveal">
+              <h3>Education</h3>
+              <div class="cred-item">
+                <h4>École des Mines de Saint-Étienne</h4>
+                <p class="cred-meta">MSc, Computer Science &amp; Executive Management · 2020 — 2023</p>
+                <p class="cred-note">
+                  Algorithms, machine learning, databases, graph theory — GPA
+                  3.87&nbsp;/&nbsp;4.0.
+                </p>
               </div>
-              <div class="field half">
-                <label for="email">Email</label>
-                <input type="email" name="_replyto" id="email" value="" />
+              <div class="cred-item">
+                <h4>University of Oslo</h4>
+                <p class="cred-meta">Graduate coursework, AI &amp; Data Science · 2022</p>
+                <p class="cred-note">
+                  Deep learning &amp; NLP, cloud computing, data-driven decision
+                  making.
+                </p>
               </div>
-              <div class="field">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" rows="5"></textarea>
+              <div class="cred-item">
+                <h4>Laureate — Fondation Georges Besse</h4>
+                <p class="cred-meta">National merit scholarship · 2021</p>
               </div>
             </div>
-            <ul class="actions special">
-              <li>
-                <input type="submit" value="Send Message" />
-              </li>
-            </ul>
+
+            <div class="cred-col reveal" style="--d: 0.1s">
+              <h3>Certifications</h3>
+              <div class="cred-item">
+                <h4>Claude Certified Architect</h4>
+                <p class="cred-meta">Anthropic · 2026</p>
+              </div>
+              <div class="cred-item">
+                <h4>Microsoft Certified: Azure Fundamentals</h4>
+                <p class="cred-meta">Microsoft · 2025</p>
+              </div>
+              <div class="cred-item">
+                <h4>GCP Professional Data Engineer</h4>
+                <p class="cred-meta">Google Cloud coursework</p>
+              </div>
+              <div class="cred-item">
+                <h4>AWS Fundamentals — Going Cloud Native</h4>
+                <p class="cred-meta">AWS coursework</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Beyond ================= -->
+      <section class="section" id="beyond">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>05</b> — Beyond the work</span>
+            <div class="sec-title"><h2>Off the clock</h2></div>
+          </header>
+
+          <div class="beyond-grid">
+            <div class="beyond-item reveal">
+              <h4>Admissions jury</h4>
+              <p>
+                Jury member for the Concours Mines-Télécom — interviewing and
+                evaluating candidates for France's top engineering schools.
+              </p>
+            </div>
+            <div class="beyond-item reveal" style="--d: 0.07s">
+              <h4>Volunteering</h4>
+              <p>
+                Taught computer skills to seniors and helped organise student meal
+                drives with Secours populaire.
+              </p>
+            </div>
+            <div class="beyond-item reveal" style="--d: 0.14s">
+              <h4>Philately</h4>
+              <p>
+                Collector of European postal and fiscal stamps — slow data, on
+                paper.
+              </p>
+            </div>
+            <div class="beyond-item reveal" style="--d: 0.21s">
+              <h4>Languages</h4>
+              <p>
+                Polish &amp; French native, English fluent, Spanish advanced.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Contact ================= -->
+      <section class="section" id="contact">
+        <div class="container">
+          <header class="sec-head reveal">
+            <span class="kicker"><b>06</b> — Get in touch</span>
+            <div class="sec-title"><h2>Contact</h2></div>
+          </header>
+
+          <p class="contact-lede reveal">
+            Have a role, a project, or just a data problem worth talking about? My
+            inbox is open.
+          </p>
+          <a class="contact-email reveal" href="mailto:patrykchlandapro@gmail.com"
+            >patrykchlandapro@gmail.com</a
+          >
+
+          <form class="form-card reveal" method="post" action="https://formspree.io/f/mjvlwyzw">
+            <div class="form-grid">
+              <div class="field">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" autocomplete="name" required />
+              </div>
+              <div class="field">
+                <label for="email">Email</label>
+                <input type="email" name="_replyto" id="email" autocomplete="email" required />
+              </div>
+              <div class="field field-full">
+                <label for="message">Message</label>
+                <textarea name="message" id="message" rows="5" required></textarea>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="submit" type="submit">Send message</button>
+            </div>
           </form>
         </div>
       </section>
+    </main>
 
-      <!-- Footer -->
-      <footer class="wrapper style1 invert align-center">
-        <div class="inner">
-          <ul class="icons">
-            <li>
-              <a
-                href="mailto:patrykchlandapro@gmail.com"
-                class="icon style2 fa-envelope"
-                ><span class="label">Email</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.linkedin.com/in/patryk-chlanda/"
-                target="_blank"
-                class="icon brands style2 fa-linkedin-in"
-                ><span class="label">LinkedIn</span></a
-              >
-            </li>
-            <li>
-              <a
-                href="https://github.com/patiwwb"
-                target="_blank"
-                class="icon brands style2 fa-github"
-                ><span class="label">GitHub</span></a
-              >
-            </li>
-          </ul>
-          <p>
-            &copy; 2022 Patryk CHLANDA
-    
-          </p>
-        </div>
-      </footer>
-    </div>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <span>© 2026 Patryk Chlanda</span>
+        <span>built from scratch, no template</span>
+        <a href="#top">back to top ↑</a>
+      </div>
+    </footer>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/jquery.scrolly.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/site.js"></script>
   </body>
 </html>

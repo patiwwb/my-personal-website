@@ -1,35 +1,31 @@
-# My Personal Website
+# patrykchlanda.netlify.app
 
-Welcome to my personal website! I'm a software engineer with a passion for solving complex problems, learning new technologies, and sharing knowledge. This site showcases my portfolio, including my skills, projects, and contact information.
+My personal website — hand-built from scratch. No template, no framework, no build step.
 
-## Website Preview
-<img width="1233" alt="image" src="https://github.com/user-attachments/assets/645ca34f-76be-425b-a020-cd2038f40b65">
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/a5940e26-3400-4293-a95c-b3734027ea50">
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/5290bc2a-ee37-41e6-bfc6-9456aff89b3c">
-<img width="1440" alt="image" src="https://github.com/user-attachments/assets/0e222d92-4751-4d85-93db-f87caef79097">
+**Live: [patrykchlanda.netlify.app](https://patrykchlanda.netlify.app/)**
 
+## Preview
 
-## View the Site
+| Dark | Light |
+|---|---|
+| ![Dark theme](assets/images/preview-dark.png) | ![Light theme](assets/images/preview-light.png) |
 
-You can view the site live here: [link](https://patrykchlanda.netlify.app/)
+## Under the hood
 
-If you want to recreate a similar website you can clone the repository, make changes and run it locally:
+- **One static page** — `index.html` + `assets/css/style.css` + `assets/js/site.js`. That's the whole site.
+- **Typography-led design** — Fraunces (display), Inter (text), JetBrains Mono (labels), with a warm dark/light palette driven by CSS custom properties.
+- **~100 lines of vanilla JS** — theme toggle (`localStorage` + `prefers-color-scheme`), IntersectionObserver scroll reveals, and active-section nav highlighting. No jQuery, no dependencies.
+- **Accessible & resilient** — semantic HTML, skip link, `:focus-visible` styles, `prefers-reduced-motion` respected, and full content without JavaScript.
+
+## Run locally
 
 ```bash
-git clone git@github.com:patiwwb/my-personal-website.git
+git clone https://github.com/patiwwb/my-personal-website.git
 cd my-personal-website
-# Make the desired changes 
-# Open the index.html file in your browser
+python3 -m http.server 8000   # or just open index.html
 ```
 
-## Contact Me
+## Contact
 
-Feel free to reach out via the contact form on the site or through my social media:
-
-    Email: patrykchlandapro@gmail.com
-    LinkedIn: Patryk Chlanda
-    GitHub: patiwwb
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- Email: patrykchlandapro@gmail.com
+- LinkedIn: [patryk-chlanda](https://www.linkedin.com/in/patryk-chlanda/)
