@@ -1,5 +1,5 @@
 /* ==========================================================================
-   patrykchlanda.netlify.app — hand-built, no template
+   patrykchlanda.netlify.app - hand-built, no template
    Type: Fraunces (display) · Inter (text) · JetBrains Mono (labels)
    ========================================================================== */
 
@@ -566,11 +566,11 @@ ol {
 }
 
 .xp-what li::before {
-  content: "—";
+  content: "•";
   position: absolute;
-  left: 0;
+  left: 0.2rem;
   color: var(--accent);
-  opacity: 0.65;
+  opacity: 0.8;
 }
 
 .chips {
